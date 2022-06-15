@@ -1,0 +1,6 @@
+framework module YXTLogger {
+  umbrella header "YXTLogger.h"
+
+  export *
+  module * { export * }
+}
