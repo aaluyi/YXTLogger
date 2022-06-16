@@ -9,7 +9,7 @@
 Pod::Spec.new do |spec|
 
   spec.name         = "YXTLogger"
-  spec.version      = "1.0.12"
+  spec.version      = "1.0.13"
   spec.summary      = "yxt logger plugin"
 
   spec.description  = <<-DESC
@@ -28,10 +28,10 @@ Pod::Spec.new do |spec|
 
   spec.platform     = :ios, "9.0"
 
-  spec.source       = { :git => "https://github.com/aaluyi/YXTLogger.git", :tag => "#{spec.version}" }
+  spec.source       = { :http => "https://wwwr.plaso.cn/static/sdk/ios/#{spec.name}/#{spec.version}/#{spec.name}.zip" }
 
 
-  spec.ios.vendored_frameworks  = "Framework/YXTLogger.framework"
+  spec.ios.vendored_frameworks  = "#{spec.name}.framework"
 
 
   spec.requires_arc = true
